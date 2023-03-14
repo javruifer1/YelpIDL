@@ -1,0 +1,56 @@
+openapi: 3.0.0
+info:
+  description: Yelp API
+  title: Yelp API
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/v3
+paths:
+  /transactions/{transaction_type}/search:
+    get:
+      description: Get transactions
+      operationId: getTransactions
+      parameters:
+      - explode: false
+        in: path
+        name: transaction_type
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: Required when latitude and longitude aren't provided. Address
+          of the location you want to deliver to.
+        explode: true
+        in: query
+        name: location
+        required: false
+        schema:
+          type: string
+        style: form
+      - description: Required when latitude and longitude aren't provided. Address
+          of the location you want to deliver to.
+        explode: true
+        in: query
+        name: latitude
+        required: false
+        schema:
+          type: string
+        style: form
+      - description: Required when location isn't provided. Longitude of the location
+          you want to deliver to.
+        explode: true
+        in: query
+        name: longitude
+        required: false
+        schema:
+          type: string
+        style: form
+      responses:
+        "200":
+          description: Returns businesses
+        "400":
+          description: bad request
+      summary: Get transactions
+      x-accepts: application/json
+components:
+  schemas: {}
