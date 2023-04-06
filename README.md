@@ -11,11 +11,31 @@ This is an example of building a OpenAPI-enabled server in Java using the Spring
 The underlying library integrating OpenAPI to Spring Boot is [springdoc](https://springdoc.org).
 Springdoc will generate an OpenAPI v3 specification based on the generated Controller and Model classes.
 The specification is available to download using the following url:
-http://localhost:8080/v3/api-docs/
+http://localhost:8081/v3/api-docs/
 
 Start your server as a simple java application
 
 You can view the api documentation in swagger-ui by pointing to
-http://localhost:8080/swagger-ui.html
+http://localhost:8081/swagger-ui.html
 
 Change default port value in application.properties
+
+## Inter-parameter dependencies in web APIs
+Web APIs usually include dependencies and constraints between the API parameters. These constraints restrict the way in which two or more input parameters can be combined to form a valid call to the service we called “Inter-parameter dependencies”. They make interacting with the services difficult because API specification languages offer little or no support for them. Martin-Lopez et al reviewed 40 industrial APIs and found that 85% of them contain inter-parameter dependencies [1]. More importantly, they classified all the dependencies found (over 600) into seven main dependency types. 
+
+
+## Description
+
+- Your task is to add validation code to the "getTransactions" method for the input parameters based on the constraints and relationships outlined in the documentation.You can find the documentation for this project in the src/test/resources/Documentation directory. 
+
+
+- It is important to carefully read the documentation to understand the inter-dependencies and constraints between the input parameters. Use the screenshots provided in the resources of the project to help you implement the validation code for the input parameters.
+
+
+- Please add the **start time** when you start working on the task, and **End time** when you finish the task. Add the start and end time as a comment inside the method.
+
+
+- To test the code, run the Spring project. The YelpIDL project will run on port 8081, and you can use the Swagger UI to test the code by accessing the Swagger UI from the link "http://localhost:8081/swagger-ui/index.html".
+
+
+- After you have completed your work on the project, make sure to submit your project.
