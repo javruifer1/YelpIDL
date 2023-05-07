@@ -5,6 +5,9 @@ The objective of this exercise is to implement validation code that verifies if 
 
 ![image](src/test/resources/Documentation/YelpIDL.png)
 
+## IDL:
+     Or(location, latitude AND longitude);
+
 ## Instructions:
 
 - **Step 0:** Clone/download the project and open it in IntelliJ.
