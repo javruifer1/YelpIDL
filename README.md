@@ -1,7 +1,7 @@
 # AISS Workshop / Taller de AISS
 
-* [English](english)
-* [Spanish](spanish)
+* [English](#english)
+* [Spanish](#spanish)
 
 <a name="english"></a>
 ## Exercise description
