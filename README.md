@@ -28,6 +28,7 @@ The objective of this exercise is to implement validation code that verifies if 
 - **Step 6:** Once you implement and test the validation code for all the dependencies, indicate the end time at the "**End time**" comment section.
 - **Step 7:** Save the project as a zip file and submit it through the virtual platform following the instructions provided by the teacher.
 
+
 <a name="spanish"></a>
 ## Descripción del ejercicio
 
