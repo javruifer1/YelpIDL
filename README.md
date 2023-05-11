@@ -45,10 +45,10 @@ El objetivo de este ejercicio es implementar un código de validación que verif
 - **Paso 1:** Abre la interfaz de Java “**TransactionsApi**“ ubicada en el paquete "org.openapitools.api". Revisa el código y asegúrate de entenderlo. Consúltanos si tienes dudas.
 - **Paso 2:** Asegúrate de entender las dependencias entre parámetros que debes implementar, se encuentran resaltadas en la captura de pantalla mostrada anteriormente. Pregunta al profesor si tienes alguna duda.
 - **Paso 3:** Antes de comenzar a implementar, añade la hora de inicio en la sección de comentarios “**Start time**”.
-- **Paso 4:** Incluye el código de validación para las dependencias resaltadas en la sección de comentarios “**Add validation code here**”. Cada bloque de validación debe devolver un código HTTP 400 con un mensaje de error simple. **Example:** Si un documento requiere que p1 debe ser mayor que p2, entonces un posible código de validación podría ser el siguiente:
+- **Paso 4:** Incluye el código de validación para las dependencias resaltadas en la sección de comentarios “**Add validation code here**”. Cada bloque de validación debe devolver un código HTTP 400 con un mensaje de error simple. **Ejemplo:** Si un documento requiere que p1 debe ser mayor que p2, entonces un posible código de validación podría ser el siguiente:
 
-     if (! (p1 > p2) )
-         return new ResponseEntity("p1 debe ser mayor que p2", HttpStatus.BAD_REQUEST);
+      if (! (p1 > p2) )
+         return new ResponseEntity("p1 must be greater than p2", HttpStatus.BAD_REQUEST);
                 
 - **Paso 5:** Prueba tu código usando un cliente como Postman o la documentación interactiva generada por Swagger (disponible en http://localhost:8081/swagger-ui/index.html). Recuerda que la aplicación está funcionando en el puerto 8081.
 - **Paso 6:** Una vez que implementes y pruebes el código de validación para todas las dependencias, indica la hora de finalización en la sección de comentarios "**End time**".
