@@ -75,7 +75,9 @@ public interface TransactionsApi {
 
         //Add validation code here
 
-
+        if ((location == null ) && (latitude == null || longitude == null )) {
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
         //
 
         return new ResponseEntity<>(HttpStatus.OK);
