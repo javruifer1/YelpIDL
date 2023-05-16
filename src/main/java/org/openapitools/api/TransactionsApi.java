@@ -70,8 +70,8 @@ public interface TransactionsApi {
         @Parameter(name = "latitude", description = "Required when latitude and longitude aren't provided. Address of the location you want to deliver to.", in = ParameterIn.QUERY) @Valid @RequestParam(value = "latitude", required = false) String latitude,
         @Parameter(name = "longitude", description = "Required when location isn't provided. Longitude of the location you want to deliver to.", in = ParameterIn.QUERY) @Valid @RequestParam(value = "longitude", required = false) String longitude
     ) {
-        //Start Time:
-        //End Time:
+        //Start Time:15:45
+        //End Time:16:20
 
         //Add validation code here
 
